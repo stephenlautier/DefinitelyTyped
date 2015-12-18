@@ -13,3 +13,14 @@ class TestController {
 }
 
 app.controller('TestController', TestController);
+
+
+
+var barConfig: angular.loadingBar.ILoadingBarProvider[] = [];
+barConfig.push({
+	includeSpinner: true,
+	includeBar: true,
+	spinnerTemplate: 'template',
+	latencyThreshold: 100
+});
+
